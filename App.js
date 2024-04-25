@@ -7,7 +7,8 @@ import {
   Button,
   Pressable,
   Modal,
-  StatusBar
+  StatusBar,
+  ActivityIndicator
 } from "react-native";
 import { useState } from "react";
 const logoImage = require("./assets/adaptive-icon.png");
@@ -15,7 +16,8 @@ const logoImage = require("./assets/adaptive-icon.png");
 export default function App() {
   return (
     <View style={{ flex: 1, backgroundColor: "plum", padding: 60 }}>
-      <StatusBar backgroundColor="lightgreen" barStyle={"dark-content"} hidden/>
+      <ActivityIndicator size="small"/>
+      <ActivityIndicator size="large" color="midnightblue"/>
     </View>
   );
 }
